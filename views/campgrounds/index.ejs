@@ -3,7 +3,7 @@
 <div class="container">    
     <header class="jumbotron">
         <div class="container">
-            <h1>Welcome To Yelpcamp!</h1>
+            <h1>Welcome To YelpCamp!</h1>
             <p>View our specially picked campgrounds from all around the world</p>
             <p>
                 <a class="btn btn-primary btn-large" href="/campgrounds/new"><span class="glyphicon glyphicon-plus"></span>Add New Campground</a>
@@ -11,13 +11,13 @@
         </div>
     </header>
 
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <div class="row text-center" style="display: flex; flex-wrap: wrap;">
         <% campgrounds.forEach(function(campgrounds){ %>
             <div class="col-md-3 col-sm-6">
                 <div class="thumbnail">
-                    <img src="<%= campgrounds.image %>">
+                    <img style="max-height: 250px; min-height: 250px; max-width: 250px; min-width: 250px;" src="<%= campgrounds.image %>">
                     <div class="caption">
                         <h4><%= campgrounds.name %></h4>
                     </div>
